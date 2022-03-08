@@ -9,14 +9,21 @@ public class StackTester {
         // test pop
         myStack.pop();
         // populate
-        myStack.push(1);
-        myStack.push(9);
-        myStack.push(8);
-        myStack.push(7);
+        myStack.push(67);
+        myStack.push(82);
+        myStack.push(65);
+        myStack.push(73);
+        myStack.push(71);
         System.out.println(myStack);
         // testing peek and pop
-        System.out.println(myStack.peek());
-        System.out.println(myStack.pop());
-        System.out.println(myStack.peek());
+        //System.out.println(myStack.peek());
+        //System.out.println(myStack.pop());
+        //System.out.println(myStack.peek());
+        System.out.println((char)(myStack.pop()));
+        System.out.println((char)(myStack.pop()));
+        System.out.println((char)(myStack.pop()));
+        System.out.println((char)(myStack.pop()));
+        System.out.println((char)(myStack.pop()));
+
     }
 }
