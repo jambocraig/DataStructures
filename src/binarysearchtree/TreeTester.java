@@ -10,6 +10,8 @@ public class TreeTester {
         myTree.addNode(17,"Wolvs");
 
         myTree.postorder(myTree.root);
+        System.out.println("Searching key 2");
+        System.out.println(myTree.findNode(2));
 
     }
 }

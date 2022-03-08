@@ -35,6 +35,21 @@ public class BinarySearchTree {
         }
     }
 
+    public Node findNode(int key){
+        Node current = this.root;
+        while(current.key != key){
+            if(key < current.key){
+                current = current.leftChild;
+            } else{
+                current = current.rightChild;
+            }
+            if(current == null){
+                return null;
+            }
+        }
+        return current;
+    }
+
     public void inorder(Node current) {
         if (current != null) {
             inorder(current.leftChild);
