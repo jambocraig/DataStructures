@@ -4,6 +4,8 @@ public class StackTester {
     public static void main(String[] args) {
         // create a stack with capacity 5
         Stack myStack = new Stack(5);
+        // testing size
+        System.out.println(myStack.size());
         // test isEmpty
         System.out.println(myStack.isEmpty());
         // test pop
@@ -18,12 +20,13 @@ public class StackTester {
         // testing peek and pop
         //System.out.println(myStack.peek());
         //System.out.println(myStack.pop());
-        //System.out.println(myStack.peek());
+        System.out.println(myStack.peek());
+        // testing size
+        System.out.println("Stack size = " + myStack.size());
         System.out.println((char)(myStack.pop()));
         System.out.println((char)(myStack.pop()));
         System.out.println((char)(myStack.pop()));
         System.out.println((char)(myStack.pop()));
         System.out.println((char)(myStack.pop()));
-
     }
 }

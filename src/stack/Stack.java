@@ -1,25 +1,25 @@
 package stack;
 
-import java.util.StringJoiner;
-
 public class Stack implements IStack{
     private int top; // points at the upper element or -1 if empty
     private final int[] stack;
-    private final int SIZE;
+    private final int MAX_CAPACITY;
 
+    // constructors
     // default constructor with stack size = 10
     Stack(){
         this.top = -1;
-        this.SIZE = 10;
-        this.stack = new int[SIZE];
+        this.MAX_CAPACITY = 10;
+        this.stack = new int[MAX_CAPACITY];
     }
 
     Stack(int size){
         this.top = -1;
-        this.SIZE = size;
-        this.stack = new int[SIZE];
+        this.MAX_CAPACITY = size;
+        this.stack = new int[MAX_CAPACITY];
     }
 
+    // getters
     @Override
     public int pop() {
         if(isEmpty()){
@@ -33,7 +33,7 @@ public class Stack implements IStack{
 
     @Override
     public boolean isFull() {
-        return this.SIZE == this.top + 1;
+        return this.MAX_CAPACITY == this.top + 1;
     }
 
     @Override
@@ -51,6 +51,7 @@ public class Stack implements IStack{
         return this.top + 1;
     }
 
+    // setter
     @Override
     public void push(int value) {
         if(this.isFull()){
