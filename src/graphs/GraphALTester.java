@@ -2,6 +2,7 @@ package graphs;
 
 import java.util.Scanner;
 
+// this needs improvement - very poor
 public class GraphALTester {
     public static void main(String[] agrs) {
         Scanner e = new Scanner(System.in);
