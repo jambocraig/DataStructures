@@ -10,6 +10,11 @@ public class TreeTester {
         myTree.addNode(17,"Wolvs");
 
         myTree.postorder(myTree.root);
+        System.out.println("\nPreorder");
+        myTree.preorder();
+        System.out.println("\nInorder");
+        myTree.inorder();
+        System.out.println("\nSearching");
         System.out.println("Searching key 2");
         System.out.println(myTree.findNode(2));
 
